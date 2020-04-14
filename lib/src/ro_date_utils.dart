@@ -1,8 +1,10 @@
 /// get DateTime By DateStr.
-DateTime roDateTime(String dateStr, {bool isUtc}) => RoDateUtils.dateTime(dateStr, isUtc: isUtc);
+DateTime roDateTime(String dateStr, {bool isUtc}) =>
+    RoDateUtils.dateTime(dateStr, isUtc: isUtc);
 
 /// get DateTime By Milliseconds.
-DateTime roDateTimeByMs(int milliseconds, {bool isUtc = false}) => RoDateUtils.dateTimeByMs(milliseconds, isUtc: isUtc);
+DateTime roDateTimeByMs(int milliseconds, {bool isUtc = false}) =>
+    RoDateUtils.dateTimeByMs(milliseconds, isUtc: isUtc);
 
 /// get DateMilliseconds By DateStr.
 int roDateMsByTimeStr(String dateStr) => RoDateUtils.dateMsByTimeStr(dateStr);
@@ -10,27 +12,33 @@ int roDateMsByTimeStr(String dateStr) => RoDateUtils.dateMsByTimeStr(dateStr);
 /// get Now Date Milliseconds.
 int roDateNowDateMs() => RoDateUtils.nowDateMs();
 
-/// format date by milliseconds.
+/// format date by milli.
 /// milliseconds 日期毫秒
 String roDateFormatDateMs(int milliseconds,
-{bool isUtc = false, String format}) => RoDateUtils.formatDateMs(milliseconds, isUtc: isUtc, format: format);
+        {bool isUtc = false, String format}) =>
+    RoDateUtils.formatDateMs(milliseconds, isUtc: isUtc, format: format);
 
 /// format date by date str.
 /// dateStr 日期字符串
-String roDateFormatDateStr(String dateStr, {bool isUtc, String format}) => RoDateUtils.formatDateStr(dateStr, isUtc: isUtc, format: format);
+String roDateFormatDateStr(String dateStr, {bool isUtc, String format}) =>
+    RoDateUtils.formatDateStr(dateStr, isUtc: isUtc, format: format);
 
 /// format date by DateTime.
 /// format 转换格式(已提供常用格式 DataFormats，可以自定义格式："yyyy/MM/dd HH:mm:ss")
 /// 格式要求
 /// year -> yyyy/yy   month -> MM/M    day -> dd/d
 /// hour -> HH/H      minute -> mm/m   second -> ss/s
-String roDateFormatDate(DateTime dateTime, {bool isUtc, String format}) => RoDateUtils.formatDate(dateTime, isUtc: isUtc, format: format);
+String roDateFormatDate(DateTime dateTime, {bool isUtc, String format}) =>
+    RoDateUtils.formatDate(dateTime, isUtc: isUtc, format: format);
 
 /// get WeekDay By Milliseconds.
-String roDateWeekDayByMs(int milliseconds, {bool isUtc = false}) => RoDateUtils.weekDayByMs(milliseconds, isUtc: isUtc);
+String roDateWeekDayByMs(int milliseconds, {bool isUtc = false}) =>
+    RoDateUtils.weekDayByMs(milliseconds, isUtc: isUtc);
 
 /// get ZH WeekDay By Milliseconds.
-String roDateZHWeekDayByMs(int milliseconds, {bool isUtc = false}) => RoDateUtils.ZHWeekDayByMs(milliseconds, isUtc: isUtc);
+String roDateZHWeekDayByMs(int milliseconds, {bool isUtc = false}) =>
+    RoDateUtils.ZHWeekDayByMs(milliseconds, isUtc: isUtc);
+
 /// get WeekDay.
 String roDateWeekDay(DateTime dateTime) => RoDateUtils.weekDay(dateTime);
 
@@ -38,22 +46,26 @@ String roDateWeekDay(DateTime dateTime) => RoDateUtils.weekDay(dateTime);
 String roDateZHWeekDay(DateTime dateTime) => RoDateUtils.ZHWeekDay(dateTime);
 
 /// Return whether it is leap year.
-bool roDateIsLeapYearByDateTime(DateTime dateTime) => RoDateUtils.isLeapYearByDateTime(dateTime);
+bool roDateIsLeapYearByDateTime(DateTime dateTime) =>
+    RoDateUtils.isLeapYearByDateTime(dateTime);
 
 /// Return whether it is leap year.
 bool roDateIsLeapYearByYear(int year) => RoDateUtils.isLeapYearByYear(year);
 
 /// is yesterday by millis.
 /// 是否是昨天.
-bool roDateIsYesterdayByMillis(int millis, int locMillis) => RoDateUtils.isYesterdayByMillis(millis, locMillis);
+bool roDateIsYesterdayByMillis(int millis, int locMillis) =>
+    RoDateUtils.isYesterdayByMillis(millis, locMillis);
 
 /// is yesterday by dateTime.
 /// 是否是昨天.
-bool roDateIsYesterday(DateTime dateTime, DateTime locDateTime) => RoDateUtils.isYesterday(dateTime, locDateTime);
+bool roDateIsYesterday(DateTime dateTime, DateTime locDateTime) =>
+    RoDateUtils.isYesterday(dateTime, locDateTime);
 
 /// get day of year.
 /// 在今年的第几天.
-int roDateDayOfYearByMillis(int millis, {bool isUtc = false}) => RoDateUtils.dayOfYearByMillis(millis, isUtc: isUtc);
+int roDateDayOfYearByMillis(int millis, {bool isUtc = false}) =>
+    RoDateUtils.dayOfYearByMillis(millis, isUtc: isUtc);
 
 /// get day of year.
 /// 在今年的第几天.
@@ -61,19 +73,23 @@ int roDateDayOfYear(DateTime dateTime) => RoDateUtils.dayOfYear(dateTime);
 
 /// year is equal.
 /// 是否同年.
-bool roDateYearIsEqualByMillis(int millis, int locMillis) => RoDateUtils.yearIsEqualByMillis(millis, locMillis);
+bool roDateYearIsEqualByMillis(int millis, int locMillis) =>
+    RoDateUtils.yearIsEqualByMillis(millis, locMillis);
 
 /// year is equal.
 /// 是否同年.
-bool roDateYearIsEqual(DateTime dateTime, DateTime locDateTime) => RoDateUtils.yearIsEqual(dateTime, locDateTime);
+bool roDateYearIsEqual(DateTime dateTime, DateTime locDateTime) =>
+    RoDateUtils.yearIsEqual(dateTime, locDateTime);
 
 /// is today.
 /// 是否是当天.
-bool roDateIsToday(int milliseconds, {bool isUtc = false}) => RoDateUtils.isToday(milliseconds, isUtc: isUtc);
+bool roDateIsToday(int milliseconds, {bool isUtc = false}) =>
+    RoDateUtils.isToday(milliseconds, isUtc: isUtc);
 
 /// is Week.
 /// 是否是本周.
-bool roDateIsWeek(int milliseconds, {bool isUtc = false}) => RoDateUtils.isWeek(milliseconds, isUtc: isUtc);
+bool roDateIsWeek(int milliseconds, {bool isUtc = false}) =>
+    RoDateUtils.isWeek(milliseconds, isUtc: isUtc);
 
 class RoDateFormats {
   static String roDFFull = "yyyy-MM-dd HH:mm:ss";
@@ -153,8 +169,7 @@ class RoDateUtils {
   /// milliseconds 日期毫秒
   static String formatDateMs(int milliseconds,
       {bool isUtc = false, String format}) {
-    return formatDate(dateTimeByMs(milliseconds, isUtc: isUtc),
-        format: format);
+    return formatDate(dateTimeByMs(milliseconds, isUtc: isUtc), format: format);
   }
 
   /// format date by date str.
@@ -316,8 +331,7 @@ class RoDateUtils {
   /// get day of year.
   /// 在今年的第几天.
   static int dayOfYearByMillis(int millis, {bool isUtc = false}) {
-    return dayOfYear(
-        DateTime.fromMillisecondsSinceEpoch(millis, isUtc: isUtc));
+    return dayOfYear(DateTime.fromMillisecondsSinceEpoch(millis, isUtc: isUtc));
   }
 
   /// get day of year.

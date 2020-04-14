@@ -17,9 +17,9 @@ bool roStringIsEmpty(String text) => RoStringUtils.isEmpty(text);
 
 ///Get size for text of String.
 Size roStringSizeForString(String text, TextStyle style,
-    {double maxWidth = double.infinity,
-      double minWidth = 0,
-      int maxLines = 100}) =>
+        {double maxWidth = double.infinity,
+        double minWidth = 0,
+        int maxLines = 100}) =>
     RoStringUtils.sizeForString(text, style,
         maxWidth: maxWidth, minWidth: minWidth, maxLines: maxLines);
 
@@ -29,16 +29,17 @@ double roStringWidthForString(String text, TextStyle style) =>
 
 ///Get height for text of String.
 double roStringHeightForString(String text, TextStyle style,
-    {double maxWidth = double.infinity}) =>
+        {double maxWidth = double.infinity}) =>
     RoStringUtils.heightForString(text, style);
 
 /// Reverse text of String.
 String roStringReverse(String text) => RoStringUtils.reverse(text);
 
 ///Get text has overflowed Use an ellipsis to indicate.
-String roStringTextOverflowedUseEllipsis(String text, TextStyle style, double maxWidth,
-    {RoTextOverflowEllipsis type = RoTextOverflowEllipsis.end,
-      String replacement = '...'}) =>
+String roStringTextOverflowedUseEllipsis(
+        String text, TextStyle style, double maxWidth,
+        {RoTextOverflowEllipsis type = RoTextOverflowEllipsis.end,
+        String replacement = '...'}) =>
     RoStringUtils.textOverflowedUseEllipsis(text, style, maxWidth,
         type: type, replacement: replacement);
 
@@ -132,15 +133,15 @@ class RoStringUtils {
 
   ///Encode text of String to base64 String.
   static String roBase64Encode(String text) {
-    final content = Utf8Encoder().convert(text);//等价于 utf8.encode(text);
+    final content = Utf8Encoder().convert(text); //等价于 utf8.encode(text);
     final digest = base64Encode(content);
     return digest;
   }
 
   //Decode base64 text of String to String.
-static String roBase64Decode(String text) {
+  static String roBase64Decode(String text) {
     final List<int> bytes = base64Decode(text);
-    final String res = Utf8Decoder().convert(bytes);//等价于 utf8.decode(bytes);
+    final String res = Utf8Decoder().convert(bytes); //等价于 utf8.decode(bytes);
     return res;
-}
+  }
 }

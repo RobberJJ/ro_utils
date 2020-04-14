@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f54a4d26-7713-40f2-853c-0fdc7927fec6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/src/ro_date_utils.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/src/ro_log_utils.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/src/ro_regex_utils.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/example/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/routils.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/routils.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/public.dart" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/src/ro_string_utils.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/ro_string_utils.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

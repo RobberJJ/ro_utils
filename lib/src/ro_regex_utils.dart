@@ -1,4 +1,3 @@
-
 ///Return whether input matches regex of simple mobile.
 bool roRegexIsMobileSimple(String input) => RoRegexUtils.isMobileSimple(input);
 
@@ -18,7 +17,8 @@ bool roRegexIsIDCard15(String input) => RoRegexUtils.isIDCard15(input);
 bool roRegexIsIDCard18(String input) => RoRegexUtils.isIDCard18(input);
 
 ///Return whether input matches regex of exact id card number which length is 18.
-bool roRegexIsIDCard18Exact(String input) => RoRegexUtils.isIDCard18Exact(input);
+bool roRegexIsIDCard18Exact(String input) =>
+    RoRegexUtils.isIDCard18Exact(input);
 
 /// Return whether input matches regex of email.
 bool roRegexIsEmail(String input) => RoRegexUtils.isEmail(input);
