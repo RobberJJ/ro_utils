@@ -1,8 +1,8 @@
 name: routils
 description: A new Flutter plugin for common utils.
 version: 0.0.1
-author:
-homepage:
+author: Ro.bber<robber.cj@gmail.com>
+homepage: https://github.com/RobberJJ
 
 environment:
   sdk: ">=2.7.0 <3.0.0"

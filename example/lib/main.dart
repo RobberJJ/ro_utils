@@ -18,7 +18,10 @@ class _MyAppState extends State<MyApp> {
   void initState() {
     super.initState();
 
+    ///user like this:
     RoStringUtils.isEmpty('asdasdsad');
+    ///or like this:
+    roIsEmpty('textasdasd');
   }
 
   @override
