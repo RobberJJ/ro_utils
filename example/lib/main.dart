@@ -21,7 +21,7 @@ class _MyAppState extends State<MyApp> {
     ///user like this:
     RoStringUtils.isEmpty('asdasdsad');
     ///or like this:
-    roIsEmpty('textasdasd');
+    roStringIsEmpty('textasdasd');
   }
 
   @override

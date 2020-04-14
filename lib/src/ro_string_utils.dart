@@ -12,6 +12,45 @@ enum RoTextOverflowEllipsis {
   end,
 }
 
+///Text of String is empty or not.
+bool roStringIsEmpty(String text) => RoStringUtils.isEmpty(text);
+
+///Get size for text of String.
+Size roStringSizeForString(String text, TextStyle style,
+    {double maxWidth = double.infinity,
+      double minWidth = 0,
+      int maxLines = 100}) =>
+    RoStringUtils.sizeForString(text, style,
+        maxWidth: maxWidth, minWidth: minWidth, maxLines: maxLines);
+
+///Get width for text of String.
+double roStringWidthForString(String text, TextStyle style) =>
+    RoStringUtils.widthForString(text, style);
+
+///Get height for text of String.
+double roStringHeightForString(String text, TextStyle style,
+    {double maxWidth = double.infinity}) =>
+    RoStringUtils.heightForString(text, style);
+
+/// Reverse text of String.
+String roStringReverse(String text) => RoStringUtils.reverse(text);
+
+///Get text has overflowed Use an ellipsis to indicate.
+String roStringTextOverflowedUseEllipsis(String text, TextStyle style, double maxWidth,
+    {RoTextOverflowEllipsis type = RoTextOverflowEllipsis.end,
+      String replacement = '...'}) =>
+    RoStringUtils.textOverflowedUseEllipsis(text, style, maxWidth,
+        type: type, replacement: replacement);
+
+///Encode text of String to md5.
+String roStringMd5Encode(String text) => RoStringUtils.roMd5Encode(text);
+
+///Encode text of String to base64 String.
+String roStringBase64Encode(String text) => RoStringUtils.roBase64Encode(text);
+
+//Decode base64 text of String to String.
+String roStringBase64Decode(String text) => RoStringUtils.roBase64Decode(text);
+
 class RoStringUtils {
   ///Text of String is empty or not.
   static bool isEmpty(String text) => (text == null || text.isEmpty);
