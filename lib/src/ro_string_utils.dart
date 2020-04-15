@@ -49,7 +49,7 @@ String roStringMd5Encode(String text) => RoStringUtils.roMd5Encode(text);
 ///Encode text of String to base64 String.
 String roStringBase64Encode(String text) => RoStringUtils.roBase64Encode(text);
 
-//Decode base64 text of String to String.
+///Decode base64 text of String to String.
 String roStringBase64Decode(String text) => RoStringUtils.roBase64Decode(text);
 
 class RoStringUtils {
@@ -78,7 +78,7 @@ class RoStringUtils {
           {double maxWidth = double.infinity}) =>
       sizeForString(text, style, maxWidth: maxWidth).height;
 
-  /// Reverse text of String.
+  ///Reverse text of String.
   static String reverse(String text) {
     if (isEmpty(text)) return text;
     StringBuffer sb = StringBuffer();
@@ -138,7 +138,7 @@ class RoStringUtils {
     return digest;
   }
 
-  //Decode base64 text of String to String.
+  ///Decode base64 text of String to String.
   static String roBase64Decode(String text) {
     final List<int> bytes = base64Decode(text);
     final String res = Utf8Decoder().convert(bytes); //等价于 utf8.decode(bytes);
