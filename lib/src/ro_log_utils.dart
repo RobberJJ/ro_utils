@@ -16,12 +16,15 @@ class RoLogUtils {
   }
 
   static void v(Object obj, {String tag}) {
-    _log(tag, "v:", obj);
+    if (_isDebug) {
+      _log(tag, "v:", obj);
+    }
   }
 
   static void _log(String tagPrefix, String tagFlag, Object obj) {
     String log = obj.toString();
     tagPrefix = tagPrefix ?? _tagPrefix;
+    tagFlag = tagFlag ?? _tagFlag;
     if (log.length <= _maxLen) {
       print("$tagPrefix$tagFlag $log");
       return;

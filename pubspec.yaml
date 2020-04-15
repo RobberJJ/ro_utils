@@ -1,6 +1,6 @@
 name: routils
-description: A new Flutter plugin for common utils.
-version: 0.0.3
+description: A new Flutter plugin for common utils, such as String & Date & Log & Regex etc. And We will continue to update.
+version: 0.0.4
 author: Ro.bber<robber.cj@gmail.com>
 homepage: https://github.com/RobberJJ/ro_utils
 

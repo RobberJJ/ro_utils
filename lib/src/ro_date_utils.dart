@@ -36,14 +36,14 @@ String roDateWeekDayByMs(int milliseconds, {bool isUtc = false}) =>
     RoDateUtils.weekDayByMs(milliseconds, isUtc: isUtc);
 
 /// get ZH WeekDay By Milliseconds.
-String roDateZHWeekDayByMs(int milliseconds, {bool isUtc = false}) =>
-    RoDateUtils.ZHWeekDayByMs(milliseconds, isUtc: isUtc);
+String roDateZhWeekDayByMs(int milliseconds, {bool isUtc = false}) =>
+    RoDateUtils.zhWeekDayByMs(milliseconds, isUtc: isUtc);
 
 /// get WeekDay.
 String roDateWeekDay(DateTime dateTime) => RoDateUtils.weekDay(dateTime);
 
 /// get ZH WeekDay.
-String roDateZHWeekDay(DateTime dateTime) => RoDateUtils.ZHWeekDay(dateTime);
+String roDateZhWeekDay(DateTime dateTime) => RoDateUtils.zhWeekDay(dateTime);
 
 /// Return whether it is leap year.
 bool roDateIsLeapYearByDateTime(DateTime dateTime) =>
@@ -227,9 +227,9 @@ class RoDateUtils {
   }
 
   /// get ZH WeekDay By Milliseconds.
-  static String ZHWeekDayByMs(int milliseconds, {bool isUtc = false}) {
+  static String zhWeekDayByMs(int milliseconds, {bool isUtc = false}) {
     DateTime dateTime = dateTimeByMs(milliseconds, isUtc: isUtc);
-    return ZHWeekDay(dateTime);
+    return zhWeekDay(dateTime);
   }
 
   /// get WeekDay.
@@ -265,7 +265,7 @@ class RoDateUtils {
   }
 
   /// get ZH WeekDay.
-  static String ZHWeekDay(DateTime dateTime) {
+  static String zhWeekDay(DateTime dateTime) {
     if (dateTime == null) return null;
     String weekday;
     switch (dateTime.weekday) {
