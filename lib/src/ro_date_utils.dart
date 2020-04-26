@@ -127,7 +127,7 @@ Map<int, int> roMonthDays = {
   12: 31,
 };
 
-/// Date Util.
+/// Date utils.
 class RoDateUtils {
   /// get DateTime By DateStr.
   static DateTime dateTime(String dateStr, {bool isUtc}) {

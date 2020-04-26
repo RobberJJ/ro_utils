@@ -4,6 +4,7 @@ void roLogE(Object obj, {String tag}) => RoLogUtils.e(obj, tag: tag);
 ///print v log;
 void roLogV(Object obj, {String tag}) => RoLogUtils.v(obj, tag: tag);
 
+///Log utils.
 class RoLogUtils {
   static const String _tagPrefix = 'RoUtils:';
   //mark is debug mode or not, if true 'v' log will not print out.

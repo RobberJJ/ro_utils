@@ -74,7 +74,7 @@ const Map<String, String> roIdCardProvinceDic = {
   '91': '国外',
 };
 
-/// Regex Util.
+/// Regex utils.
 class RoRegexUtils {
   /// Regex of simple mobile.
   static final String regexMobileSimple = "^[1]\\d{10}\$";

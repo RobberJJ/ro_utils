@@ -15,6 +15,9 @@ enum RoTextOverflowEllipsis {
 ///Text of String is empty or not.
 bool roStringIsEmpty(String text) => RoStringUtils.isEmpty(text);
 
+///Text of String is not empty or not.
+bool roStringIsNotEmpty(String text) => !RoStringUtils.isNotEmpty(text);
+
 ///Get size for text of String.
 Size roStringSizeForString(String text, TextStyle style,
         {double maxWidth = double.infinity,
@@ -52,9 +55,13 @@ String roStringBase64Encode(String text) => RoStringUtils.roBase64Encode(text);
 ///Decode base64 text of String to String.
 String roStringBase64Decode(String text) => RoStringUtils.roBase64Decode(text);
 
+///String common utils.
 class RoStringUtils {
   ///Text of String is empty or not.
   static bool isEmpty(String text) => (text == null || text.isEmpty);
+
+  ///Text of String is not empty or not.
+  static bool isNotEmpty(String text) => !isEmpty(text);
 
   ///Get size for text of String.
   static Size sizeForString(String text, TextStyle style,
