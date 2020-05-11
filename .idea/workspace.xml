@@ -2,13 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f54a4d26-7713-40f2-853c-0fdc7927fec6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/src/ro_list_utils.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/src/ro_map_utils.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/Podfile.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/ro_utils.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ro_utils.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ro_utils.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/ro_date_utils.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/ro_date_utils.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/ro_log_utils.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/ro_log_utils.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/ro_regex_utils.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/ro_regex_utils.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/ro_string_utils.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/ro_string_utils.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner.xcworkspace/contents.xcworkspacedata" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner.xcworkspace/contents.xcworkspacedata" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/example/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/routils.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/routils.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/ro_list_utils.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/ro_list_utils.dart" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,9 +30,13 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1aWKFO7fKnYD0RRR0mua78rN1B7" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="dart.analysis.tool.window.force.activate" value="false" />
+    <property name="io.flutter.reload.alreadyRun" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
@@ -76,5 +83,8 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

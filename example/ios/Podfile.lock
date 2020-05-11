@@ -1,0 +1,22 @@
+PODS:
+  - Flutter (1.0.0)
+  - routils (0.0.1):
+    - Flutter
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - routils (from `.symlinks/plugins/routils/ios`)
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  routils:
+    :path: ".symlinks/plugins/routils/ios"
+
+SPEC CHECKSUMS:
+  Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
+  routils: 479aed9cfdf15c346207320731b8cee69a635f5c
+
+PODFILE CHECKSUM: c34e2287a9ccaa606aeceab922830efb9a6ff69a
+
+COCOAPODS: 1.8.4

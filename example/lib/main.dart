@@ -22,10 +22,24 @@ class _MyAppState extends State<MyApp> {
     RoStringUtils.isEmpty('asdasdsad');
     ///or like this:
     roStringIsEmpty('textasdasd');
+
+
   }
 
   @override
   Widget build(BuildContext context) {
+    List list = ['asdasd', 'asdasdasd'];
+    Map map = {'asd':123};
+    Set set = Set();
+    Iterable it = Iterable.empty();
+    String string = 'sadasd';
+
+    print(roLength(list));
+    print(roLength(map));
+    print(roLength(set));
+    print(roLength(it));
+    print(roLength(string));
+
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
